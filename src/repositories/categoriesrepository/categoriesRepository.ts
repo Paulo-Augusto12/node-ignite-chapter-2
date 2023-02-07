@@ -1,4 +1,4 @@
-import { Category } from "../../../models/category";
+import { Category } from "../../models/category";
 
 import { ICreateCategoryDTO } from "./ICreateCategoryDTO";
 
@@ -22,7 +22,7 @@ class CategoriesRepository {
   }
 
   list(): Category[] {
-    return this.categories
+    return this.categories;
   }
 }
 

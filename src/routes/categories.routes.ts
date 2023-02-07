@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { CategoriesRepository } from "../repositories/categoriesrepository/createCategoryRepository/categoriesRepository";
+import { CategoriesRepository } from "../repositories/categoriesrepository/categoriesRepository";
 
 const categoriesRoutes = Router();
 const categoriesRepository = new CategoriesRepository();
@@ -13,7 +13,7 @@ categoriesRoutes.post("/", (request, response) => {
 });
 
 categoriesRoutes.get("/", (request, response) => {
-  const allCategories = categoriesRepository.list()
+  const allCategories = categoriesRepository.list();
   return response.json(allCategories);
 });
 
