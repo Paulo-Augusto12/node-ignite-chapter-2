@@ -1,0 +1,8 @@
+{
+  "name": "node-ignite-chapter-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Paulo-Augusto12/node-ignite-chapter-2.git",
+  "author": "Paulo Augusto <paulo-augusto12@outlook.com>",
+  "license": "MIT"
+}
