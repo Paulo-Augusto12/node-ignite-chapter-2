@@ -5,21 +5,22 @@ const categoriesRoutes = Router()
 
 const categories = [];
 
-categoriesRoutes.post("/categories", (request, response) => {
+categoriesRoutes.post("/", (request, response) => {
 
     const { name, description } = request.body
-    const categorieId = uuidv4()
-    categories.push({
-        categorieId,
+
+    const category = {
+        categoryId: uuidv4(),
         name, 
         description,
         created_at: new Date(),
-    })
+    }
+    categories.push(category)
 
     return response.status(201).send()
 })
 
-categoriesRoutes.get("/categories", (request, response) => {
+categoriesRoutes.get("/", (request, response) => {
 
     return response.send(categories)
 })
