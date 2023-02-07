@@ -8,6 +8,10 @@ export function CreateCourse (request: Request, response: Response) {
         educator: "Dani",
         duration: 12
     })
+    CreateCourseService.execute({
+        name: "React Native",
+        educator: "Rodrigo",
+    })
 
     return response.send()
 }

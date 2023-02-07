@@ -11,6 +11,10 @@ function CreateCourse(request, response) {
         educator: "Dani",
         duration: 12
     });
+    CreateCourseService_1.default.execute({
+        name: "React Native",
+        educator: "Rodrigo",
+    });
     return response.send();
 }
 exports.CreateCourse = CreateCourse;
