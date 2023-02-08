@@ -1,6 +1,4 @@
-
-
 export interface ICreateCategoryDTO {
-    name: string;
-    description: string;
+  name: string;
+  description: string;
 }
