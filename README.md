@@ -1,4 +1,4 @@
-# node-ignite-chapter-2
+# RentalX
 
 O Projeto a ser desenvolvido será um serviço de categorização de carros, cadastro, usuário, e aluguel de veiculos
 
