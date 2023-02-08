@@ -1,6 +1,6 @@
-import { Category } from "../../models/category";
-import { ICategoriesRepository } from "./ICategoriesrepository";
-import { ICreateCategoryDTO } from "./ICreateCategoryDTO";
+import { Category } from "../../cars/models/category";
+import { ICategoriesRepository } from "./abstractions/ICategoriesrepository";
+import { ICreateCategoryDTO } from "./dto/ICreateCategoryDTO";
 
 export class PostgresCategoryRepository implements ICategoriesRepository {
   findByname(name: string): Category {
